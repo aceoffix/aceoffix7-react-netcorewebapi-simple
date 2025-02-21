@@ -51,7 +51,7 @@ Use "git clone" or directly download the project's compressed package to your lo
 
   - Add Aceoffix related configurations to the global interceptor in your project.
 
-    ```react
+    ```jsx
     import axios from "axios";
     import { AceBrowser } from "js-aceoffix";
     
@@ -104,7 +104,7 @@ Use "git clone" or directly download the project's compressed package to your lo
 
   - Trigger the pop - up of an Acebrowser window for editing Office documents by clicking on a hyperlink or a button. Let's assume that clicking a link in `App.js` pops up the Acebrowser, and the page containing the Aceoffix control is `ShowDoc.js`. (for example, `App.js`, which is referred to as the parent page in Aceoffix). When the hyperlink is clicked, call the `openWindow` method of the `Acebrowser` object to pop up an Aceoffix browser (`Acebrowser`) window to access `showDoc.js` and open the file online. The code is as follows.
 
-    ```react
+    ```jsx
     const openWordFile = () => {
         try {
             // The third parameter of openWindow() is used to pass parameters (with no limit on parameter length) to the popped-up Aceoffix browser (POBrowser) window. It supports JSON - formatted strings.
@@ -125,7 +125,7 @@ Use "git clone" or directly download the project's compressed package to your lo
 
   -  Then we'll edit `showDoc.js`.
 
-    ```react
+    ```jsx
     /* eslint-disable no-undef */
     import React, { useState, useEffect, useRef} from 'react';
     import service from '../api';
@@ -225,7 +225,7 @@ Use "git clone" or directly download the project's compressed package to your lo
   
     - Add the following code to  your project `Program.cs` file.
   
-      ```
+      ```c#
       app.UseMiddleware<AceoffixNetCore.AceServer.ServerHandlerMiddleware>();
       ```
   
