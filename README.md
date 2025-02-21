@@ -1,10 +1,10 @@
-# Aceoffix7-React-NetCoreWebApi-Simple
+# aceoffix7-react-netcorewebapi-simple
 
 **Latest Version：7.0.1.1**
 
 ### 1. Introduction
 
-The Aceoffix7-React-NetCoreWebApi-Simple project demonstrates how to use the Aceoffix 7.0 product in a project with a separated front - end (React) and back - end (NetCore WebApi). Please note that this project only supports ASP.NET Core and does not cover the ASP.NET Framework. It is compatible with .NET 6 and later versions. This project showcases the simplest way to open, edit, and save Word files on web pages.
+Thea ceoffix7-react-netcorewebapi-simple project demonstrates how to use the Aceoffix 7.0 product in a project with a separated front - end (React) and back - end (NetCore WebApi). Please note that this project only supports ASP.NET Core and does not cover the ASP.NET Framework. It is compatible with .NET 6 and later versions. This project showcases the simplest way to open, edit, and save Word files on web pages.
 
 ### 2. Project environmental prerequisites
 
@@ -17,7 +17,7 @@ The Aceoffix7-React-NetCoreWebApi-Simple project demonstrates how to use the Ace
 Use "git clone" or directly download the project's compressed package to your local machine and then decompress it.
 
 - **front - end**
-  - Open the `aceoffix7-react-simple` folder with a development tool like Visual Studio Code. Navigate into this folder and then use the `npm start` command to start and run the project.
+  - Open the `aceoffix7-react-simple-front` folder with a development tool like Visual Studio Code. Navigate into this folder and then use the `npm start` command to start and run the project.
 
 - **back- end**
 
