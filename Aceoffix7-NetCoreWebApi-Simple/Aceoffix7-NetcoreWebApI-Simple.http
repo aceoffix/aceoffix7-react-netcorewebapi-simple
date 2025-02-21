@@ -1,0 +1,6 @@
+@Aceoffix7_NetcoreWebApI_Simple_HostAddress = http://localhost:5097
+
+GET {{Aceoffix7_NetcoreWebApI_Simple_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
