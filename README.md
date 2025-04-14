@@ -4,7 +4,7 @@
 
 ### 1. Introduction
 
-Thea ceoffix7-react-netcorewebapi-simple project demonstrates how to use the Aceoffix 7.0 product in a project with a separated front - end (React) and back - end (NetCore WebApi). Please note that this project only supports ASP.NET Core and does not cover the ASP.NET Framework. It is compatible with .NET 6 and later versions. This project showcases the simplest way to open, edit, and save Word files on web pages.
+The aceoffix7-react-netcorewebapi-simple project demonstrates how to use the Aceoffix 7.0 product in a project with a separated front - end (React) and back - end (NetCore WebApi). Please note that this project only supports ASP.NET Core and does not cover the ASP.NET Framework. It is compatible with .NET 6 and later versions. This project showcases the simplest way to open, edit, and save Word files on web pages.
 
 ### 2. Project environmental prerequisites
 
