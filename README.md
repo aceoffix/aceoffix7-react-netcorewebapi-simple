@@ -1,6 +1,6 @@
 # aceoffix7-react-netcorewebapi-simple
 
-**Latest Version：7.0.1.1**
+**Latest Version：7.1.1.1**
 
 ### 1. Introduction
 
@@ -23,7 +23,7 @@ Use "git clone" or directly download the project's compressed package to your lo
 
   - Download the Aceoffix client program.
 
-    [aceclientsetup_7.0.1.1.exe](https://github.com/aceoffix/aceoffix7-client/releases/download/v7.0.1.1/aceclientsetup_7.0.1.1.exe)
+  [aceclientsetup_7.x.x.x.exe](https://github.com/aceoffix/aceoffix7-client/releases/)
 
 
   - Copy the program downloaded in the previous step to the root directory of the `Aceoffix7-NetCoreWebApi-Simple` project.
@@ -47,7 +47,7 @@ Use "git clone" or directly download the project's compressed package to your lo
 
 - **front - end**
 
-  - Install `js-aceoffix` in your project via the following command：**npm install js-aceoffix@7.0.1 --save-exact**
+  - Install `js-aceoffix` in your project via the following command：**npm install js-aceoffix@7.1.1 --save-exact**
 
   - Add Aceoffix related configurations to the global interceptor in your project.
 
@@ -218,7 +218,7 @@ Use "git clone" or directly download the project's compressed package to your lo
   
   -  Download the Aceoffix client program.
   
-    [aceclientsetup_7.0.1.1.exe](https://github.com/aceoffix/aceoffix-client/releases/download/v7.0.1.1/aceclientsetup_7.0.1.1.exe)
+     [aceclientsetup_7.x.x.x.exe](https://github.com/aceoffix/aceoffix7-client/releases/)
   
     - Copy the program downloaded in the previous step to the root directory of your project. Then, in Visual Studio, right - click on the program and change the value of "Properties -> Copy to Output Directory" to "Copy always".
   
