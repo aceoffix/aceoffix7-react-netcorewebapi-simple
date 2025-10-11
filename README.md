@@ -1,6 +1,6 @@
 # aceoffix7-react-netcorewebapi-simple
 
-**Latest Version：7.1.1.2**
+**Latest Version：7.2.1.1**
 
 ### 1. Introduction
 
