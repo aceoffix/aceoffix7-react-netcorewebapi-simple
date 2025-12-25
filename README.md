@@ -280,6 +280,15 @@ Use "git clone" or directly download the project's compressed package to your lo
     - Add CORS configuration for AcewServer in your project's appsettings.json.
   
       ```json
+      // Aceoffix acewserver Cross-Domain Security Configuration:
+      // 1. Using "*" is not recommended in production. It is advisable to explicitly specify allowed domain(s)/IP(s).
+      // 2. Format: Multiple addresses should be separated by commas, e.g., "domain1,domain2,ip".
+      // Note: Local development environment addresses (localhost, 127.0.0.1) must also be included in this configuration.
+      // 3. Examples:
+      // - For Frontend/Backend Separation: "frontend-domain-address, frontend-ip-address, backend-address"
+      // (e.g., "ui.example.com,192.168.1.1,localhost")
+      // - For Monolithic Multi-Entry Applications: "domain, ip"
+      // (e.g., "www.oa.com,192.168.1.100")
       "acewserver-allowedOrigins": "*"
       ```
   
