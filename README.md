@@ -277,7 +277,7 @@ Use "git clone" or directly download the project's compressed package to your lo
       ```
   
   
-    - Add CORS configuration for AcewServer in your project's appsettings.json.
+    - Add CORS configuration for AcewServer in your project's `appsettings.json`.
   
       ```json
       // Aceoffix acewserver Cross-Domain Security Configuration:
