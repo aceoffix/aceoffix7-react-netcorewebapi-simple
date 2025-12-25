@@ -1,6 +1,6 @@
 # aceoffix7-react-netcorewebapi-simple
 
-**Latest Version：7.2.2.1**
+**Latest Version：7.3.1.1**
 
 ### 1. Introduction
 
@@ -47,7 +47,46 @@ Use "git clone" or directly download the project's compressed package to your lo
 
 - **front - end**
 
-  - Install `js-aceoffix` in your project via the following command：**npm install js-aceoffix@7.1.1 --save-exact**
+  - Install `js-aceoffix` in your project via the following command：**npm install js-aceoffix@7.3.1 --save-exact**
+
+  - To configure the acewserver proxy in your current project's `setupProxy.js` file.
+
+    ```
+    module.exports = function (app) {
+      /**
+     *New: acewserver proxy configuration (It is recommended to copy this configuration block and modify the corresponding parts as per the instructions)
+     *acewserver service proxy configuration (Key Notes):
+     *This rule must be placed BEFORE the existing "/dev-api" rule to ensure priority matching.
+     *Compared to the original configuration, only WebSocket support (ws and module.exports) has been added.
+     */
+      const wsProxyFilter = function (pathname, req) {
+        const match = pathname.match("^/dev-api/acewserver");
+        if (match) {
+          // console.log('Proxy Filter matched:', pathname);
+        }
+        return match;
+      };
+      app.use(
+        createProxyMiddleware(wsProxyFilter, {
+          target: "http://localhost:5097",
+          changeOrigin: true,
+          pathRewrite: { "^/dev-api": "" },
+          ws: true,
+        })
+      );
+      // Original project configuration (remains unchanged)
+      app.use(
+        '/dev-api',
+        createProxyMiddleware({
+          target: 'http://localhost:5097',
+          changeOrigin: true,
+          pathRewrite: {
+            '^/dev-api': '',
+          },
+        })
+      );
+    };
+    ```
 
   - Add Aceoffix related configurations to the global interceptor in your project.
 
@@ -226,9 +265,23 @@ Use "git clone" or directly download the project's compressed package to your lo
     - Add the following code to  your project `Program.cs` file.
   
       ```c#
-      app.UseMiddleware<AceoffixNetCore.AceServer.ServerHandlerMiddleware>();
+      //Aceoffix Configuration
+      builder.Services.AddAceoffixAcewServer();
+      ...
+      var app = builder.Build();
+      ...
+      //Aceoffix Configure
+      app.UseAceoffixAcewServer();
+      app.UseMiddleware<ServerHandlerMiddleware>();
+      ...
       ```
   
+  
+    - Add CORS configuration for AcewServer in your project's appsettings.json.
+  
+      ```json
+      "acewserver-allowedOrigins": "*"
+      ```
   
     - Then, write the following server code in "Controllers/DocumentController.cs".
   
